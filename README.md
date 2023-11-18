@@ -2,11 +2,17 @@
 
 > Quickly serve a file through firewalld
 
+## Installation
+
+Make sure that `$GOBIN` is in `$PATH` then
+```
+go install github.com/tslnc04/serve/cmd/serve@latest
+```
+
 ## Usage
 
 Run the program with the file name and optionally a port. When the program
 exists, the firewall port will be closed. The default port is `8080`.
-
 ```
 $ serve <file> [port]
 Serving `<file>` on port [port].
